@@ -35,8 +35,8 @@ function Reservaciones() {
 
         try {
             const formData = new FormData(event.target);
-            const idCliente = parseInt(formData.get('nombreClienteID'), 10); // Obtén el ID del cliente
-            const idProyeccion = parseInt(formData.get('idProyeccion'), 10); // Obtén el ID de la proyección
+            const idCliente = parseInt(formData.get('nombreClienteID'), 10);
+            const idProyeccion = parseInt(formData.get('idProyeccion'), 10);
             const cantidadAsientos = parseInt(formData.get('cantidadAsientos'), 10);
 
             await crearReservacion(idCliente, idProyeccion, cantidadAsientos);
