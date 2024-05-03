@@ -72,7 +72,6 @@ function Reservaciones() {
                                 ))}
                             </select>
                             <input type="hidden" name="nombreClienteID" value={nombreCliente} />
-
                         </div>
                         <div className="form-group mt-3">
                             <label htmlFor="idProyeccion">Película:</label>
